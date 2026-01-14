@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Tier App</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <h1>Frontend</h1>
+  <button onclick="loadData()">Call Backend</button>
+  <pre id="output"></pre>
+
+  <script>
+    async function loadData() {
+      const res = await fetch("http://backend:5000");
+      const data = await res.json();
+      document.getElementById("output").textContent =
+        JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
