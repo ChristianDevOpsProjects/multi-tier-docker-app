@@ -24,7 +24,7 @@ Copy code
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/YOUR_USERNAME/multi-tier-docker-app.git
+git clone https://github.com/ChristianDevOpsProjects/multi-tier-docker-app.git
 cd multi-tier-docker-app
 Build and run containers:
 
